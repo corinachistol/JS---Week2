@@ -1,0 +1,49 @@
+<script>
+  grade = parseInt(prompt("Your grade please: "))
+    //HW2: what would result?
+    // parseInt (9.9) -> 9
+    // parseInt (9.1) -> 9
+    // parseInt (9.5) -> 9
+    // parseInt (9.59) -> 9
+
+LIMIT = 7
+
+// if (grade >= LIMIT) {
+//     alert("GOOD")
+
+// } else
+//     alert("BAD")
+
+  //                                \------IF------>
+  // grade---x----------------------x------A------x-->
+  //<----------------------ELSe-----\
+
+  //HW3:
+  //1...4 - very bad
+  //5-6    bad
+  //7-8  ok
+  //9 good
+  //10 excellent
+
+
+  if (grade <= 4) {
+      alert("VERY BAD");
+
+  } else if(grade <= 6 ) {
+      alert("BAD");
+
+  } else if(grade <=8 ) {
+      alert("OK");
+
+  } else if (grade === 9 ) {
+      alert("GOOD");
+
+  } else if (grade === 10) {
+      alert("EXCELLENT");
+  } else{
+      alert ("NOT ACCEPTED AS A GRADE");
+  }
+
+
+
+</script>

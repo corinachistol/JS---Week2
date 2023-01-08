@@ -1,0 +1,62 @@
+<!-- 
+
+  aka - media query
+ -->
+
+ <script>
+  //IN data
+  //const BREAK_POINT = 1100
+  //----------------------x------------------------>window size 
+  //         mobile      1100    desktop
+
+  //HW1: add breakpoints: 
+  //          560           980            1200
+  //----------x-------------x--------------x-------------->window size 
+  //  extra small    small       medium         large
+  // + size <=60 pxx error
+  // + size > 3000 error
+  
+ /*let windowWidth = innerWidth   //innerHeight
+
+  if(windowWidth >= BREAK_POINT) {
+      alert("desktop: " + innerWidth)
+
+  } else {
+      alert("mobile: " + innerWidth)
+
+  }*/
+  
+  
+  const BREAK_POINT1 = 560
+  const BREAK_POINT2 = 980 
+  const BREAK_POINT3 = 1200
+
+  let windowWidth = innerWidth
+
+  if (windowWidth <= BREAK_POINT1 ){ 
+      alert("Display: " + innerWidth +  
+             "\nWindow size: extra small")
+
+  } else if(windowWidth <= BREAK_POINT2) { 
+      alert("Display: " + innerWidth + "\nWindow size: small")
+
+  } else if(windowWidth <= BREAK_POINT3){
+      alert("Display: " + innerWidth + "\nWindow size: medium")
+
+  } else if ( windowWidth >=BREAK_POINT3) {
+      alert("Display: " + innerWidth + "\nWindow size: large")
+
+  }else if(windowWidth <=60 || windowWidth > 3000) {  
+      alert("Display: " + innerWidth + "/nError:Cannot read the window size")
+  
+  } else {
+      alert ("Cannot read the window size")
+  }
+
+
+
+ </script>
+
+
+
+
