@@ -6,7 +6,7 @@
     // parseInt (9.5) -> 9
     // parseInt (9.59) -> 9
 
-LIMIT = 7
+// LIMIT = 7
 
 // if (grade >= LIMIT) {
 //     alert("GOOD")
@@ -24,6 +24,8 @@ LIMIT = 7
   //7-8  ok
   //9 good
   //10 excellent
+  let limitMin = 1
+  let limitMax = 10
 
 
   if (grade <= 4) {
@@ -40,10 +42,9 @@ LIMIT = 7
 
   } else if (grade === 10) {
       alert("EXCELLENT");
-  } else{
-      alert ("NOT ACCEPTED AS A GRADE");
+
+  } else if ( grade < limitMin  || grade > limitMax) {
+    alert ("NOT ACCEPTED AS A GRADE");
   }
-
-
-
-</script>
+  
+  </script>
