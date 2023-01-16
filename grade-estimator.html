@@ -24,17 +24,18 @@
   // //7-8  ok
   // //9 good
   // //10 excellent
-  // let limitMin = 1
-  // let limitMax = 10
+  
+  let limitMin = 1
+  let limitMax = 10
 
 
-  if (1 >= grade && grade <= 4 ) {
+  if (1 <= grade && grade <= 4 ) {
     alert("VERY BAD!")
 
-  } else if( 5 >= grade && grade <= 6){
+  } else if( 5 <= grade && grade <= 6){
     alert("BAD!")
     
-  } else if ( 7 >= grade && grade <= 8) {
+  } else if ( 7 <= grade && grade <= 8) {
     alert("OK")
 
   } else if (grade === 9) {
@@ -43,7 +44,7 @@
   } else if(grade === 10) {
     alert("EXCELLENT!!!!")
 
-  } else if (grade < limitMin || limitMax > grade) {
+  } else if (grade < limitMin || limitMax < grade) {
     alert("Not accepted as a grade")
 
   }
